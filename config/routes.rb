@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/start_page'
+
+  get 'static_pages/help_page'
+
   resources :posts
   resources :users
   resources :categories
