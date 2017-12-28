@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  root 'static_pages#start_page'
+
   get 'static_pages/start_page'
 
   get 'static_pages/help_page'
