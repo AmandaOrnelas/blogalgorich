@@ -10,14 +10,18 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get start_page" do
     get static_pages_start_page_url
     assert_response :success
-    assert_select "title", "Home | #{@base_title}"
+    #assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "Blog"
+
 
   end
 
   test "should get help_page" do
     get static_pages_help_page_url
     assert_response :success
-    assert_select "title", "Help | #{@base_title}"
+    #assert_select "title", "Help | #{@base_title}"
+    assert_select "title", "Blog"
+
   end
 
 end
