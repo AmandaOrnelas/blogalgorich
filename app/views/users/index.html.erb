@@ -1,4 +1,17 @@
-<p id="notice"><%= notice %></p>
+
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
+
+
+<!--<p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
 
@@ -29,3 +42,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+-->
